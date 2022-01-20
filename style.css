@@ -48,7 +48,8 @@ footer{
 /*For smart phone and small tablet devices*/
 @media(min-width: 481px){
   .clock{
-    font-size: 2.5rem;
+    width: 80%;
+    font-size: 2.2rem;
     border: 15px solid rgba(255,255,255,0.4);
     padding: 20px 10px;
   }
@@ -57,16 +58,28 @@ footer{
 /*For tablet devices*/
 @media(min-width: 769px){
   .clock{
+    width: 80%;
     font-size: 3.5rem;
     border: 20px solid rgba(255,255,255,0.4);
-    padding: 25px 15px;
+    padding: 25px 10px;
   }
 }
 
 /*For large devices*/
 @media(min-width: 1024px){
   .clock{
+    width: 80%;
     font-size: 5rem;
+    border: 20px solid rgba(255,255,255,0.4);
+    padding: 30px 15px;
+  }
+}
+
+/*For large devices*/
+@media(min-width: 1201px){
+  .clock{
+    width: 75%;
+    font-size: 5.4rem;
     border: 20px solid rgba(255,255,255,0.4);
     padding: 30px 15px;
   }
