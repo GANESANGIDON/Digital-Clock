@@ -1,0 +1,57 @@
+/*Digital clock*/
+
+*{
+/*To reset the default browser properties*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background:linear-gradient(30deg, #9F31FF, #FF002D, #FFC500);
+  /*background-color: #00a2ed;*/
+}
+ 
+/*clock*/
+.clock{
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.6);
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  padding: 10px 5px;
+  border: 10px solid rgba(255,255,255,0.4);
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.2);
+}
+
+/*donebytext*/
+#doneby{
+  font-weight: 200;
+  font-size: 18px;
+  float: right;
+}
+
+/*done by container*/
+footer{
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+  bottom: 0px;
+}
+
+/*For large devices*/
+@media(min-width: 920px){
+  .clock{
+    font-weight: 700;
+    font-size: 90px;
+    border: 20px solid rgba(255,255,255,0.4);
+    padding: 30px 15px;
+  }
+}
