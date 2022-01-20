@@ -1,7 +1,7 @@
-/*Digital clock*/
+/* Digital clock */
 
 *{
-/*To reset the default browser properties*/
+/* To reset the default browser properties */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,35 +10,34 @@
 body{
   height: 100vh;
   width: 100%;
-  background:linear-gradient(30deg, #9F31FF, #FF002D, #FFC500);
-  /*background-color: #00a2ed;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(55deg, #8000f0, #e4002a, #e2ad00);
 }
  
-/*clock*/
+/* clock */
 .clock{
-  position: absolute;
-  width: 85%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  box-shadow: 0px 0px 12px rgba(0,0,0,0.6);
-  font-weight: 700;
-  font-size: 35px;
+  width: 90%;
+  font-weight: 550;
+  font-size: 1.5rem;
   text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   padding: 10px 5px;
   border: 10px solid rgba(255,255,255,0.4);
   border-radius: 1rem;
   background: rgba(255,255,255,0.2);
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.6);
 }
 
-/*donebytext*/
+/* footer text */
 #doneby{
   font-weight: 200;
   font-size: 18px;
   float: right;
 }
 
-/*done by container*/
+/* footer */
 footer{
   position: absolute;
   width: 100%;
@@ -46,11 +45,28 @@ footer{
   bottom: 0px;
 }
 
-/*For large devices*/
-@media(min-width: 920px){
+/*For smart phone and small tablet devices*/
+@media(min-width: 481px){
   .clock{
-    font-weight: 700;
-    font-size: 90px;
+    font-size: 2.5rem;
+    border: 15px solid rgba(255,255,255,0.4);
+    padding: 20px 10px;
+  }
+}
+
+/*For tablet devices*/
+@media(min-width: 769px){
+  .clock{
+    font-size: 3.5rem;
+    border: 20px solid rgba(255,255,255,0.4);
+    padding: 25px 15px;
+  }
+}
+
+/*For large devices*/
+@media(min-width: 1024px){
+  .clock{
+    font-size: 5rem;
     border: 20px solid rgba(255,255,255,0.4);
     padding: 30px 15px;
   }
